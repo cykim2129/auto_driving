@@ -19,7 +19,7 @@ def publish_cmd_vel():
         while rclpy.ok():
             publisher.publish(msg)
             node.get_logger().info('Publishing cmd_vel')
-            rclpy.spin_once(node, timeout_sec=5.0)  # 0.1초마다 한 번씩만 처리하도록 변경
+            rclpy.spin_once(node, timeout_sec=5.0)
     except KeyboardInterrupt:
         pass
 

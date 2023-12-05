@@ -52,7 +52,7 @@ def publish_cmd_vel():
 
 
     start_time = time.time()
-    loop_period = 1/10  # 루프 주기
+
     try:
         while rclpy.ok():
           current_time = time.time() - start_time
@@ -63,8 +63,8 @@ def publish_cmd_vel():
           publisher.publish(msg)
           node.get_logger().info(f'Publishing cmd_vel: linear={msg.linear.x}, angular={msg.angular.z}')
 
-           #time.sleep(1)
-          time.sleep(loop_period)
+
+          time.sleep(0.1)
 
     except KeyboardInterrupt:
         pass
