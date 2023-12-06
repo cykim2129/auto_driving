@@ -1,4 +1,6 @@
-#Build
+# Build
+
+### /cmd_vel 토픽발행  sine파형,step파형,test(직선)파형
 -------------
 
 
