@@ -11,6 +11,7 @@
 2.빌드
 
     $colcon build --symlink-install
+    $source install/setup.bash
 
 3.실행
 
